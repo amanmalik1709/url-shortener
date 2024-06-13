@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.body-font {
+    @apply  font-light;
+}
+
+
+.heading-font {
+    @apply  font-normal uppercase;
+}
+
+.button {
+    @apply  font-semibold text-xs uppercase tracking-widest;
+}
+
+/* styles.css or styles.scss */
+
+/* Primary Text */
+.primary-font {
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  /* Secondary Text */
+  .secondary-font {
+    font-family: 'Karla', sans-serif;
+  }
+  
+  /* Tertiary Text */
+  .tertiary-font {
+    font-family: 'Merriweather', serif;
+  }
+  

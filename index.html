@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Shortify</title>
+    <link rel="icon" href="./assets/shortify-circle.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&family=Barlow:wght@600&family=Rasa:wght@300&display=swap"
+        rel="stylesheet">
+
+
 </head>
-<body class="bg-slate-900">
+
+<body class="tertiary-font bg-gradient-to-right no-scrollbar">
+
+    <!-- nav-bar -->
+    <!-- making a responsive nav bar -->
+
+
+    <nav class="mb-10shadow-md fixed w-full lg:shadow-xl items-center">
+
+        <div class="flex justify-between bg-white ">
+
+            <!-- main logo of brand -->
+
+            <div class="flex px-3 py-4 gap-3 items-center">
+                <img src="./assets/shortify-circle.png" class="size-12" alt="">
+                <h2 class="text-primary heading-font text-4xl font-semibold">Shortify</h2>
+            </div>
+
+
+
+            <!-- hamburger for nav bar -->
+
+            <div id="hamburgerlog-bar" class="lg:hidden px-6 py-6">
+                <i class="primary-font fa-solid fa-bars text-2xl hover:cursor-pointer hover:opacity-80 text-primary hover:text-gray-400"
+                    onclick="handledropdownmenu()"></i>
+            </div>
+
+
+
+            <!-- cross icon for nav bar -->
+
+            <div id="hamburgerlog-cross" class="lg:hidden px-6 py-6 hidden">
+                <i class="text-primary fa-solid fa-xmark text-2xl hover:cursor-pointer hover:opacity-80  hover:text-gray-400"
+                    onclick="handledropdownmenu()"></i>
+            </div>
+
+
+
+            <!-- full-screen-nav-bar-options -->
+
+            <div id="full-screen-nav-bar-options"
+                class="hidden text-secondary hover:text-secondary-hover lg:flex flex-row px-3 py-5 gap-2">
+
+                <div class=" secondary-font text-2xl px-4 py-2 items-center   hover:cursor-pointer">
+                    <a href="#">About</a>
+                </div>
+
+                <div class=" secondary-font text-2xl px-4 py-2 items-center   hover:cursor-pointer">
+                    <a href="#">Services</a>
+                </div>
+
+                <div class=" secondary-font text-2xl px-4 py-2 items-center   hover:cursor-pointer">
+                    <a href="#">Why Us?</a>
+                </div>
+
+                <div class=" secondary-font text-2xl px-4 py-2 items-center   hover:cursor-pointer">
+                    <a href="#">Testimonials</a>
+                </div>
+
+                <div class=" secondary-font text-2xl px-4 py-2 items-center   hover:cursor-pointer">
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- drop down menu for nav bar that appears on clicking hamburger icon -->
+
+        <div id="dropdown" class="bg-white  flex-col px-3 py-3 hidden">
+
+            <div
+                class=" secondary-font text-2xl px-4 py-2 items-center hover:bg-gray-50  hover:cursor-pointer border-none rounded-2xl">
+                <a herf="#" class="">About</a>
+            </div>
+
+            <div
+                class=" secondary-font text-2xl px-4 py-2 items-center hover:bg-gray-50  hover:cursor-pointer border-none rounded-2xl">
+                <a herf="#" class="">Services</a>
+            </div>
+
+            <div
+                class=" secondary-font text-2xl px-4 py-2 items-center hover:bg-gray-50  hover:cursor-pointer border-none rounded-2xl">
+                <a herf="#" class="">Why Us?</a>
+            </div>
+
+            <div
+                class=" secondary-font text-2xl px-4 py-2 items-center hover:bg-gray-50  hover:cursor-pointer border-none rounded-2xl">
+                <a herf="#" class="">Testimonials</a>
+            </div>
+
+            <div
+                class=" secondary-font text-2xl px-4 py-2 items-center hover:bg-gray-50  hover:cursor-pointer border-none rounded-2xl">
+                <a herf="#" class="">Contact</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- main body of my website -->
+
+    <main class=" lg:px-[100px] py-[160px] px-[60px] ">
+
+        <!-- hero section of my page -->
+
+        <div id="hero-section" class="px-4 py-6 mb-12 ">
+
+            <!-- main part of my page -->
+            <div id="main-part" class="flex flex-col md:flex-row justify-between md:gap-8">
+
+                <!-- Main Image (Visible on Small Screens) -->
+                <div class="md:hidden mb-20">
+                    <img src="./assets/main-images.svg" alt="Main Image">
+                </div>
+
+                <!-- Main Heading Section -->
+                <div id="main-heading"
+                    class="w-full md:w-1/2 px-6 py-6 flex flex-col justify-center items-center text-center">
+                    <h1 class="text-primary primary-font sm:text-[100px]  text-4xl font-bold mb-4 sm:mb-12">Shortify
+                    </h1>
+                    <h2 class="text-secondary secondary-font sm:text-4xl text-xl">Your all-in-one solution for URL
+                        shortening, image to
+                        PDF conversion, and more.</h2>
+                </div>
+
+
+                <!-- Main Image (Visible on Medium and Larger Screens) -->
+                <div class="hidden md:flex">
+                    <img src="./assets/main-images.svg" alt="Main Image">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- about-me-part -->
+
+
+        <div id="about-me" class="lg:px-4 lg:py-6 mb-12 rounded-2xl">
+            <div class="h-[1000px] bg-gray-100 rounded-2xl px-8 py-8 lg:px-24 lg:py-20">
+
+                <!-- heading -->
+
+                <div>
+                    <h1 class="text-primary primary-font text-4xl font-semibold sm:text-8xl ">About Me</h1>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <div class="h-[1000px]"></div>
+
     <script src="./index.js"></script>
+
 </body>
+
 </html>
